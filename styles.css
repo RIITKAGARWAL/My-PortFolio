@@ -30,3 +30,71 @@ body {
     outline: none;
     text-decoration: none;
 }
+
+/* pseudo selectors */
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* aside */
+.aside {
+    width: 270px;
+    height: 100%;
+    padding: 30px;
+    border-right: 1px solid var(--bg-black-50);
+    background-color: var(--bg-black-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+/* logo begins  */
+.aside .logo {
+    position: absolute;
+    top: 50px;
+}
+
+.aside .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 13px 17px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.aside .logo a span {
+    font-family: "Clicker Script", cursive;
+    font-size: 40px
+}
+
+.aside .logo a::before {
+    content: '';
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: '';
+    height: 30px;
+    width: 50px;
+    border-right: 5px solid var(--skin-color);
+    border-top: 5px solid var(--skin-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+/* logo ends */
+
+

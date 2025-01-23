@@ -179,3 +179,339 @@ ul {
 .hidden{
     display: none !important;
 }
+
+
+/* main-content  */
+.main-content{
+    padding-left: 270px;
+}
+/* section */
+.section {
+    background-color: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    /* border: 1px solid var(--bg-black-50); */
+    /* box-shadow: -2px 2px 10px var(--skin-color); */
+    padding-bottom: 30px;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* container */
+.container {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+/* home */
+.home .home-img img {
+    height: 400px;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    right: 30px;
+
+}
+
+.home .home-img::before {
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: -50px;
+    left: -10px;
+
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+.home .home-img::after {
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -20px;
+    bottom: -50px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: 'Clicker Script', cursive;
+    color: var(--skin-color);
+    font-weight: 700;
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    font-size: 20px;
+    margin-bottom: 70px;
+    color: var(--text-black-700);
+}
+
+.shadow-dark{
+    box-shadow: 0px 0px 20px rgba(48,46,77,0.15);
+}
+
+/* begin about me */
+.section-title h2{
+    font-weight: 700;
+    margin-bottom: 70px;
+    font-size: 40px;
+    color: var(--text-black-900);
+    position: relative;
+}
+
+.section-title h2::before{
+content: '';
+height: 4px;
+width: 50px;
+background-color: var(--skin-color);
+position: absolute;
+left:0;
+bottom:0;
+
+}
+
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+
+}
+
+.about .about-text h3{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about .about-text h3 span{
+    color: var(--skin-color);
+}
+.about .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+.about .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 36px;
+}
+.about .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 36px;
+
+}
+
+.about .personal-info .row .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 12px;
+}
+
+.about .personal-info .row .info-item p{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+
+}
+.about .personal-info .row .info-item span{
+    color: var(--text-black-700);
+}
+.about .personal-info .row .info-item span a{
+    color: var(--text-black-700);
+    text-decoration: dashed;
+}
+
+.button {
+    width: 100%;
+    display: block;
+    
+}
+.button .btn{
+    margin-top: 32px;
+    margin-left: 16px;
+}
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: var(--skin-color);
+    color: white;
+    border-radius: 24px;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+.about .skills .skill-item{
+    margin-bottom: 8px;
+    width: 80%;
+}
+.about .skills .skill-item h5{
+    color: var(--text-black-900);
+    font-weight: 600;
+}
+.about .skills .skill-item .progress{
+    width: 100%;
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    position: relative;
+    
+}
+.about .skills .skill-item .progress .progress-in{
+    position : absolute;
+    height: 100%;
+    background-color: var(--skin-color);
+    border-radius: 4px;
+}
+.about .skills .skill-item .progress .skill-percent{
+    position: absolute;
+    right: 0;
+    top: -24px;
+}
+
+/* Education  */
+.about .container .row .education{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+}
+.about .container .row .education .edu{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.about .container .row .education .exp{
+    flex: 0 0 48%;
+    max-width: 48%;
+
+}
+
+
+.about .container .row .education h3{
+    font-weight: 700;
+    color: var(--text-black-900);
+    font-size: 24px;
+}
+
+.about .container .row .education .timeline{
+    padding: 30px 15px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    position: relative;
+    border-radius: 10px;
+}
+
+.about .container .row .education .timeline .timeline-item{
+    padding: 0 0 37px 50px;
+    position: relative;
+}
+
+.about .container .row .education .timeline .timeline-item:last-child{
+    padding-bottom: 0px;
+}
+
+.about .container .row .education .timeline .timeline-item::before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    left: 7px;
+    top: 0;
+    border-radius: 1px;
+    background-color: var(--skin-color) ;
+    position: absolute;
+
+}
+.about .container .row .education .timeline .timeline-item .circle-dot{
+    position: absolute;
+    background-color: var(--skin-color);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    left:0;
+    top:0;
+}
+.about .container .row .education .timeline .timeline-item .timeline-date {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+    font-weight: 400;
+
+}
+.about .container .row .education .timeline .timeline-item .timeline-date .fa{
+    margin-right: 8px;
+}
+.about .container .row .education .timeline .timeline-item .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--text-black-900);
+}
+.about .container .row .education .timeline .timeline-item .timeline-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-black-700);
+}
+/* end about me */

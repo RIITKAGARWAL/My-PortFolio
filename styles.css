@@ -570,3 +570,60 @@ bottom:0;
 }
 /* end talent */
 
+/* begin services */
+.services .container .row {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.services .container .row .service-item{
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-bottom: 30px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    text-align: center;
+    border-radius: 24px;
+    padding: 12px;
+    margin-right: 32px;
+    height: 240px;
+}
+
+.services .container .row .service-item:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.services .container .row .service-item .icons{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    transition: all 0.3s ease-in;
+}
+.services .container .row .service-item .icons .fa{
+    color: var(--skin-color);
+    font-size: 40px;
+    line-height: 60px;
+    transition: all 0.3s ease-in;
+}
+.services .container .row .service-item:hover .icons{
+    background-color: var(--skin-color);
+}
+.services .container .row .service-item:hover .icons .fa{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.services .container .row .service-item h3{
+    color: var(--text-black-900);
+    /* margin-bottom: 15px; */
+    font-weight: 600;
+    font-size: 18px;
+}
+.services .container .row .service-item p{
+    color: var(--text-black-700);
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+
+/* end services */
